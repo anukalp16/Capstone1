@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>document</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #120169 0%, #efbff8 100%);
+      margin: 0;
+      overflow-x: hidden;
+      
+    }
+
+    
+    #video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+    #video video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    
+    .navbar {
+      display: flex;
+      position: fixed;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      background-color: rgba(136, 134, 134, 0.4);
+      border-radius: 15px;
+      font-size: large;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      z-index: 99;
+      top: 0;
+      left: 0;
+      padding: 10px 50px;
+      box-sizing: border-box;
+      margin-top: 10px;
+      margin-left: 7px;
+    }
+
+    .nav {
+      cursor: pointer;
+      border-radius: 8px;
+      width: 80px;
+      height: 45px;
+      transition: background-color 0.2s, opacity 0.3s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 15px;
+    }
+
+    .nav:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    #play {
+      background-color: rgba(250, 146, 27, 0.845);
+      text-align: center;
+    }
+    #play:hover {
+      background-color: rgb(249, 169, 20);
+      opacity: 0.9;
+    }
+
+    #logo img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    #login a {
+      text-decoration: none;
+      color: white;
+    }
+    .play {
+      width: 120px;
+      height: 50px;
+      background-color: rgba(250, 146, 27, 0.845);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      font-size: large;
+      cursor: pointer;
+      margin: auto;
+      margin-top: 40px;
+      z-index: 20000;
+    }
+  </style>
+</head>
+<body>
+  <div>
+  <div  id="video">
+    <video autoplay muted loop>
+      <source src="https://cdn.pixabay.com/video/2022/11/07/138115-768324070_large.mp4">
+    </video>
+  </div>
+    <h1 style="font-size: 80px; font-style: italic; font-family:Arial, Helvetica, sans-serif; z-index: 5; align-items: center; justify-content: center; text-align: center; position: relative; display: flex; color: whitesmoke; box-sizing: border-box; top: 300px;;" >NXT_RAGE'</h1>
+    <span style="font-size: 30px; font-style:inherit; z-index: 5; align-items: center; justify-content: center; text-align: center; position: relative; display: flex; color: whitesmoke; box-sizing: border-box; top: 250px;;" >A FUTURE WORTH FIGHTING FOR</span><br>
+    <span style="font-size: 20px; font-style:inherit; z-index: 5; align-items: center; justify-content: center; text-align: center; position: relative; display: flex; color: whitesmoke; box-sizing: border-box; top: 200px;;"><h3>TEAM-BASED ACTION • FREE TO PLAY</h3></span>
+
+  </div>
+  
+
+  
+  <div class="navbar">
+    <div class="nav" id="logo">
+      <img src="https://cdn.pixabay.com/photo/2024/01/25/06/56/ai-generated-8531104_1280.png">
+    </div>
+
+    <div style="display: flex;">
+      <div class="nav" id="login">
+        <a href="login.html"><h4>Login</h4></a>
+      </div>
+      <div class="nav" id="hero"><h4>Hero</h4></div>
+      <div class="nav" id="about"><h4>About</h4></div>
+      <div class="nav" id="play"><h4>Play Now</h4></div>
+    </div>
+  </div>
+  <div style="display: block;">
+    <h2>Be a hero, build a squad, win the fight!</h2>
+  </div>
+  
+  
+</body>
+</html>

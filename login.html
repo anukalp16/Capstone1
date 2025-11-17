@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: linear-gradient(to right, #140151 0%, #400205 100%);
+    }
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    width: 900px;
+    height: 420px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+
+.left {
+    width: 50%;
+    padding: 40px 50px;
+}
+
+.left h2 {
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+.left label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.left input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #2f74f5;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.login-btn:hover {
+    background: #1f5fde;
+}
+
+.signup-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup-text a {
+    color: #2f74f5;
+    text-decoration: none;
+}
+
+
+.right {
+    width: 50%;
+    background: #e9e9e9;
+}
+
+.right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-card">
+            <div class="left">
+                <h2>Welcome Back!</h2>
+
+                <label>Username or Email</label>
+                <input type="text" placeholder="Enter username or email">
+
+                <label>Password</label>
+                <input type="password" placeholder="Enter password">
+
+                <button class="login-btn">Login</button>
+
+                <p class="signup-text">
+                    Don't have an account? <a href="#">Sign Up</a>
+                </p>
+            </div>
+
+            
+            <div class="right">
+                <img src="https://media.istockphoto.com/id/1336858948/photo/futuristic-viking-warrior.jpg?s=1024x1024&w=is&k=20&c=tcEbdQ28D3RLETU9i5SD4BGc2Ah-AgRwCYGtYdp7eiE=" alt="hero">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
