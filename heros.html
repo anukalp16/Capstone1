@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: #0d0d0d;
+            color: white;
+        }
+        .hero {
+            height: 100vh;
+            background: url('https://cdn.pixabay.com/photo/2014/10/02/06/34/war-469503_1280.jpg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            
+        }
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 0 0 10px black;
+        }
+        .hero p {
+            max-width: 600px;
+            font-size: 1.2rem;
+            margin: 20px 0;
+            text-shadow: 0 0 10px black;
+        }
+        .btn {
+            background: #f9a800;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            color: #000;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #ffbe33;
+        }
+            .heroes {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            background: #111;
+        }
+        .hero-card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .hero-card:hover {
+            transform: scale(1.05);
+        }
+        .hero-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .hero-card h3 {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>Welcome to NXT_RAGE</h1>
+        <p>Assemble your team of heroes and engage in fast‑paced battles across futuristic landscapes.</p>
+        <button class="btn">Play Now</button>
+    </section>
+
+    
+    <div class="heroes">
+        <div class="hero-card">
+            <img src="https://cdn.pixabay.com/photo/2024/09/16/09/18/ai-generated-9050838_1280.jpg" alt="Tracer">
+            <h3>Tracer</h3>
+        </div>
+        <div class="hero-card">
+            <img src="https://cdn.pixabay.com/photo/2024/05/16/02/05/hero-8764833_1280.png" alt="Reinhardt">
+            <h3>Reinhardt</h3>
+        </div>
+        <div class="hero-card">
+            <img src="https://cdn.pixabay.com/photo/2024/09/16/09/18/ai-generated-9050839_1280.jpg" alt="Widowmaker">
+            <h3>Widowmaker</h3>
+        </div>
+        <div class="hero-card">
+            <img src="https://cdn.pixabay.com/photo/2024/09/16/09/18/ai-generated-9050836_1280.jpg" alt="Genji">
+            <h3>Genji</h3>
+        </div>
+    </div>
+</body>
+</html>

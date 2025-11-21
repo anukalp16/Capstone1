@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+
+    <style>
+        
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: #0d1117;
+            color: #ffffff;
+        }
+
+        .hero {
+            
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            text-shadow: 0 0 20px rgba(0, 200, 255, 0.7);
+            letter-spacing: 2px;
+        }
+
+        .about-container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #161b22;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            color: #00c8ff;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #d1d1d1;
+        }
+
+        .team-section {
+            margin-top: 50px;
+        }
+
+        .heroes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .hero-card {
+            background: #1f242d;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+
+        .hero-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 20px rgba(0,200,255,0.5);
+        }
+
+        .hero-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .hero-card h3 {
+            margin: 15px 0 5px;
+            color: #00c8ff;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background: #0d1117;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero">
+        <h1>About Our Game</h1>
+    </div>
+
+    <div class="about-container">
+        <h2>Welcome to the Arena</h2>
+        <p>
+            Inspired by the dynamic world of Overwatch, NXT_RAGE our game brings heroes, strategy, and fast-paced 
+            action to life. Every character has a unique story, abilities, and role in shaping the battlefield.
+        </p>
+
+        <p>
+            We aim to create a universe full of excitement, teamwork, and unforgettable battles. Step into 
+            a futuristic world where every hero matters—and every second counts.
+        </p>
+
+        <div class="team-section">
+            <h2>Meet Some Heroes</h2>
+
+            <div class="heroes">
+
+                <div class="hero-card">
+                    <img src="https://i.imgur.com/VbjAIxq.jpeg" alt="Hero 1">
+                    <h3>Tracer</h3>
+                    <p>Fast, agile, and always ready for action. Blink through the battlefield with precision.</p>
+                </div>
+
+                <div class="hero-card">
+                    <img src="https://i.imgur.com/xOQ2gMN.jpeg" alt="Hero 2">
+                    <h3>Reinhardt</h3>
+                    <p>A noble warrior with an ironclad shield. Protect your team and lead the charge.</p>
+                </div>
+
+                <div class="hero-card">
+                    <img src="https://i.imgur.com/59KwTGD.jpeg" alt="Hero 3">
+                    <h3>Widowmaker</h3>
+                    <p>A deadly sniper with unmatched accuracy. Pick off enemies from the shadows.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Inspired by Overwatch | Fan-made Layout
+    </div>
+
+</body>
+</html>
