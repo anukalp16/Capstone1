@@ -13,7 +13,9 @@
     }
 
     body {
-        background: rgb(24, 1, 45)
+      background-image: url('https://i.pinimg.com/1200x/d7/eb/da/d7ebda9b425242f68b315d8ce489a2be.jpg');
+      background-size: cover;
+      
     }
 
 .container {
@@ -96,10 +98,13 @@
     object-fit: cover;
 }
 
+    
+
     </style>
 </head>
 <body>
     <div class="container">
+        
         <div class="login-card">
             <div class="left">
                 <h2>Welcome Back!</h2>
@@ -108,9 +113,9 @@
                 <input type="text" placeholder="Enter username or email">
 
                 <label>Password</label>
-                <input type="password" placeholder="Enter password">
+                <input type="password" placeholder="Enter password" id="pw">
 
-                <button class="login-btn">Login</button>
+                <button class="login-btn" onclick="checkPw()">Login</button>
 
                 <p class="signup-text">
                     Don't have an account? <a href="#">Sign Up</a>
@@ -119,11 +124,11 @@
 
             
             <div class="right">
-                <img src="https://media.istockphoto.com/id/1336858948/photo/futuristic-viking-warrior.jpg?s=1024x1024&w=is&k=20&c=tcEbdQ28D3RLETU9i5SD4BGc2Ah-AgRwCYGtYdp7eiE=" alt="hero">
+                <img src="https://i.pinimg.com/1200x/37/08/c1/3708c178aeff48fdc0db893d6ddad696.jpg" alt="hero">
             </div>
 
         </div>
     </div>
-
+<script src="login.js"></script>
 </body>
 </html>

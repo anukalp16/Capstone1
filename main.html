@@ -11,6 +11,11 @@
       overflow-x: hidden;
       
     }
+    @media all and (max-width: 480px) {
+      #video {
+        height: auto;
+      }
+    }
 
     
     #video {
@@ -137,7 +142,7 @@
         <a href="heros.html"><h4>Hero</h4></a></div>
       <div class="nav" id="about">
         <a href="about.html"><h4>About</h4></a></div>
-      <div class="nav" id="play"><h4>Play Now</h4></div>
+      <div class="nav" id="play" ><h4 onclick="showAlert()">Play Now</h4></div>
     </div>
   </div>
   <div style="display: block;">
@@ -145,6 +150,6 @@
   </div>
   <div class=""></div>
   
-  
+  <script src="main.js"></script>
 </body>
 </html>

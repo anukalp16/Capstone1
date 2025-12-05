@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://i.pinimg.com/736x/cd/dc/89/cddc8985e467a05f1ed1623b87eb0748.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.box {
+    background: white;
+    width: 350px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h2 { margin-bottom: 20px; }
+
+button {
+    padding: 10px 15px;
+    margin: 10px 5px;
+    font-size: 18px;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#cont {
+    width: 100%;
+    background-color: rgb(255, 166, 0);
+}
+
+#cont:hover {
+    background-color: rgb(255, 200, 0);
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+}
+</style>
+
+</head>
+<body>
+
+<div class="box">
+    <h2>Enter Number of Players</h2>
+
+    <button id="minus">-</button>
+    <span id="qty">1</span>
+    <button id="plus">+</button>
+
+    <p>PLAYERS: <span id="total">1</span></p>
+
+    <button onclick="startGame()" id="cont">Continue</button>
+</div>
+
+<script src="play.js"></script>
+
+</body>
+</html>
